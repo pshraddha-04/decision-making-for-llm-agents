@@ -1,0 +1,38 @@
+# LLM & Agent Framework
+langchain
+langchain-community
+langchain-core
+
+# LLM Inference
+ollama
+groq
+google-genai
+
+# Vector Store / RAG
+faiss-cpu
+
+# Evaluation
+ragas==0.1.21
+deepeval
+scikit-learn
+
+# Backend
+fastapi
+uvicorn
+
+# Frontend
+streamlit
+
+# Datasets
+datasets  # HuggingFace datasets (SQuAD 2.0, HotpotQA, AmbigQA)
+
+
+# Embeddings
+sentence-transformers
+langchain-huggingface
+
+# Utilities
+python-dotenv
+numpy>=2.0.0,<2.8.0
+scipy
+pandas
