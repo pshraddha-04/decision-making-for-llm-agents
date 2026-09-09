@@ -48,14 +48,14 @@ Current LLM agents may answer questions even when uncertain or under-informed. E
 
 - **Language:** Python
 - **LLM inference:** Ollama (local), Groq or Gemini (free-tier hosted)
-- **Agent framework:** LangChain or LlamaIndex
+- **Agent framework:** LangChain or LlamaIndex or LangGraph
 - **Vector store / RAG:** FAISS or ChromaDB
 - **Evaluation:** RAGAS, DeepEval, Scikit-learn
 - **Metrics:** Accuracy, Precision, Recall, F1 Score, Calibration, Hallucination Rate, Abstention Rate
 - **Backend:** FastAPI
 - **Frontend:** Streamlit
 - **Compute:** Google Colab or Kaggle Notebooks (free GPU)
-- **Datasets:** SQuAD 2.0, HotpotQA, AmbigQA
+- **Datasets:** SimpleQA, SQuAD 2.0, HotpotQA, AmbigQA, HaluEval, Custom Decision Dataset
 
 The full pipeline is achievable on free-tier infrastructure with no cost barrier.
 
@@ -66,7 +66,7 @@ The full pipeline is achievable on free-tier infrastructure with no cost barrier
 - Configure LLM inference (Ollama locally; Groq or Gemini as free-tier hosted fallback)
 - Scaffold FastAPI backend and Streamlit frontend
 - Set up Colab/Kaggle notebooks for free GPU access
-- Download and preprocess SQuAD 2.0, HotpotQA, and AmbigQA
+- Download and preprocess datasets
 - Consolidate literature review foundations (SAUP, SelfCheckGPT, P(True)/P(IK), SELAUR, UAG)
 
 ### Phase 2 — Uncertainty Estimation Module (Weeks 2–3) ⚠️ highest risk
@@ -81,7 +81,7 @@ The full pipeline is achievable on free-tier infrastructure with no cost barrier
 - Build a threshold-tuning framework (start rule-based, leave room to move to a learned policy)
 
 ### Phase 4 — Agent Integration (Week 5)
-- Wire the uncertainty estimator and decision policy into a full agent pipeline (LangChain/LlamaIndex)
+- Wire the uncertainty estimator and decision policy into a full agent pipeline (LangChain/LlamaIndex/LangGraph)
 - Connect retrieval (FAISS/ChromaDB) and a verification step for low-confidence answers
 - Expose the agent via the FastAPI backend and Streamlit frontend for interactive testing
 
